@@ -15,6 +15,8 @@ header {
     border: 2px solid #bc8ec0;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    color: #4e2185;
+    text-align: center;
 }
 *
 
@@ -25,9 +27,41 @@ nav {
     border: 2px solid #bc8ec0;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    color: #4e2185;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #633997;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #bc8ec0;
+    transform: scale(1.05);
 }
 
 section {
+
     background-color: #f5d6f8;
     padding: 10px;
     margin-bottom: 10px;
@@ -63,18 +97,119 @@ footer {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
 }
 
- 
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5d6f8;
+    padding: 20px;
+    border: 2px solid #bc8ec0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.flex-item {
+    background-color: #fcfcfc;
+    padding: 20px;
+    border: 2px solid #bc8ec0;
+    border-radius: 10px;
+    text-align: center; 
+    flex: 1;
+    margin: 0 10px;
+}
+
+.flex-item h3 {
+    margin: 0 0 10px;
+    color: #4e2185;
+}
+
+.content-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content-flex-item {
+    flex: 1;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border: 2px solid #bc8ec0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content-flex-item h2 {
+    margin-top: 0;
+    color: #4a148c;
+    font-size: 1.8em;
+}
+
+.content-flex-item p {
+    font-size: 1.1em;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.related-links {
+    background-color: #f5d6f8;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #bc8ec0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.related-links h2 {
+    color: #4a148c;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.related-links a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.related-links a img:hover {
+    transform: scale(1.1);
+}
+
+body {
+    font-size: 18px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav h1 {
+    font-size: 1.8em;
+}
+
+footer p {
+    font-size: 1em;
+}
 </style>
 
 <body>
     
 
     <header>
-        <h1>Header</h1>
+        <h1>Welcome to my Website</h1>
+        
         <p></p>
     </header>
-
-   
 
     <nav>
         <h1>Navigation</h1>
@@ -86,24 +221,26 @@ footer {
         </ul>
     </nav>
 
-    <section>
-        <h2>About Us</h2>
-        <p>This is about section of our website</p>
+    <section class="content-flex-container">
+        <div class="content-flex-item">
+            <h2>About Me</h2>
+            <p>Hi, my name is Anielle Dane Cerezo, a 2nd-year Information Technology (IT) student at National University Lipa. I’m from the Philippines, and I’m passionate about technology and how it can be used to solve real-world problems and improve everyday life. </p>
+        </div>
+        <div class="content-flex-item">
+            <h2>Latest News</h2>
+            <p>One of my most memorable achievements was winning in an international robotics competition held in Thailand—the World Robot Games 2019. You can read more about it <a href="https://pinoythaiyo.com/students-from-oriental-mindoro-win-at-world-robot-games-2019-in-thailand/#google_vignette" target="_blank">here</a>. This experience sparked my passion for innovation and continues to inspire my journey in the field of technology.</p>
+        </div>
     </section>
 
-    <article>
-        <h2>Latest News</h2>
-        <p>This is the latest news article on our website.</p>
-    </article>
-
-    <aside>
+    <section class="related-links">
         <h2>Related Links</h2>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
-    </aside>
+        <a href="https://facebook.com/nielqt0201">
+            <img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338509_1280.png" alt="Facebook">
+        </a>
+        <a href="https://github.com/Nielqttt">
+            <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="GitHub">
+        </a>
+    </section>
 
     <footer>
         <p>&copy; 2025 Sample Website. All rights reserved.</p>
